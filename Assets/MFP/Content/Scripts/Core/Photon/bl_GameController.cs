@@ -27,6 +27,8 @@ public class bl_GameController : bl_PhotonHelper {
     public GameObject StartWindow = null;
     public Image BlackBg = null;
 
+  //  public InputManager InPut;
+
     /// <summary>
     /// 
     /// </summary>
