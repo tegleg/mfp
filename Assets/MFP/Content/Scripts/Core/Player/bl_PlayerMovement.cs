@@ -119,6 +119,8 @@ public class bl_PlayerMovement : bl_PhotonHelper {
         this.vel = this.controller.velocity;
         this.velMagnitude = this.vel.magnitude;
 
+        bool bFire = Input.GetMouseButton(0);
+
         if (this.m_OnLadder)
         {
             this.m_HPoint = this.myTransform.position.y;
@@ -130,6 +132,8 @@ public class bl_PlayerMovement : bl_PhotonHelper {
         {
             float inputX = Input.GetAxis("Horizontal");
             float inputY = Input.GetAxis("Vertical");
+
+            
 
             float inputModifyFactor = (inputX != 0.0f && inputY != 0.0f) ? .7071f : 1.0f;
 
@@ -354,8 +358,19 @@ public class bl_PlayerMovement : bl_PhotonHelper {
                 }
             }
         }
+
+        //weapons
+        if (bFire)
+        {
+            FireWeapon();
+        }
     }
 
+    //weapons
+    void FireWeapon()
+    {
+
+    }
 
     /// <summary>
     /// Player Control / Boost Movement when is super jump
