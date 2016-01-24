@@ -16,7 +16,7 @@ DustGroundChurn:|:e87d16020e34070448f9aa6549492459:|:1:|:False
 PalmBranchesFalling:|:bf23812c5bdd1ee40bfc904fcb81c073:|:2:|:False
 WoodChipsLarge:|:cbd6d1780d52264478a508c3f63cd802:|:10:|:False
 WoodSplintersLarge:|:17c67638638ffca4e8c93d331643c142:|:10:|:False
-WoodSplintersSmall:|:7a27210e9b7d56942a6acf1af0210d33:|:10:|:False
+WoodSplintersSmall:|:7a27210e9b7d56942a6acf1af0210d33:|:10:|:True
 GlassShatterBig:|:b359c14ee2ba0f643977c27ad679ec60:|:6:|:True
 ShockFlash:|:9f38591bb6b3f4bae89cf8f5b4091217:|:1:|:False
 ConcreteDebris:|:0dd95ab22bc34604088832d295dc29f8:|:6:|:False

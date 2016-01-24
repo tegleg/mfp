@@ -13,6 +13,7 @@ namespace DestroyIt
         /// <param name="startDistance">The initial distance from the player transform to instantiate the weapon.</param>
         /// <param name="initialVelocity">The initial force velocity applied to the weapon (if any). For example, a bullet fired from a gun.</param>
         /// <param name="randomRotation">If TRUE, the weapon prefab will be instantiated and rotated randomly before launch.</param>
+        [PunRPC]
         public static void Launch(GameObject weaponPrefab, Transform weaponLauncher, float startDistance, float initialVelocity, bool forceCollisions, bool randomRotation)
         {
             Quaternion rotation = randomRotation ? UnityEngine.Random.rotation : weaponLauncher.rotation;

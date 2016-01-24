@@ -39,7 +39,7 @@ namespace DestroyIt
             if (Physics.Raycast(transform.position, transform.forward, out hitInfo, rayCastLength))
             {
                 //Debug.Log("hit something");
-                InputManager.Instance.ProcessBulletHit(hitInfo, transform.forward);
+                TegInputManager.Instance.ProcessBulletHit(hitInfo, transform.forward);
                 hitSomething = true;
             }
 

@@ -85,7 +85,7 @@ namespace DestroyIt
                 return;
             }
 
-            firstPersonController = transform.parent;// Camera.main.transform.parent;
+           // firstPersonController = transform.parent;// Camera.main.transform.parent;
 
             foreach (Transform trans in MyCam.transform)
             {
@@ -481,6 +481,7 @@ namespace DestroyIt
             }
         }
 
+       [PunRPC]
         private void FireGun()
         {
             // Play muzzle flash particle effect
@@ -551,6 +552,7 @@ namespace DestroyIt
                 toneMapping.type = Tonemapping.TonemapperType.UserCurve;
         }
 
+        //[PunRPC]
         public void ProcessBulletHit(RaycastHit hitInfo, Vector3 bulletDirection)
         {
             // Check if bullet struck dirt

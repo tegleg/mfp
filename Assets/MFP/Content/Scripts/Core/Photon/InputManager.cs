@@ -545,6 +545,7 @@ namespace DestroyIt
                 toneMapping.type = Tonemapping.TonemapperType.UserCurve;
         }
 
+        [PunRPC]
         public void ProcessBulletHit(RaycastHit hitInfo, Vector3 bulletDirection)
         {
             // Check if bullet struck dirt

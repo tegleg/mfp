@@ -121,6 +121,7 @@ namespace DestroyIt
             return null;
         }
 
+        [PunRPC]
         private static GameObject InstantiateObject(GameObject prefab, Vector3 position, Quaternion rotation, Transform parent)
         {
             GameObject obj = Instantiate(prefab, position, rotation) as GameObject;
@@ -137,6 +138,7 @@ namespace DestroyIt
         }
 
         /// <summary>Spawns an object from the object pool, setting the object's parent to what you pass in.</summary>
+        [PunRPC]
         public GameObject Spawn(GameObject originalPrefab, Vector3 position, Quaternion rotation, Transform parent, int autoPoolID = 0)
         {
             // If an AutoPoolID was passed in, try to find it in the AutoPool dictionary.
@@ -212,6 +214,8 @@ namespace DestroyIt
         }
 
         /// <summary>Spawns an object from the object pool. The object will not be a child of any other object.</summary>
+        /// 
+        //[PunRPC]
         public GameObject Spawn(GameObject originalPrefab, Vector3 position, Quaternion rotation, int autoPoolID = 0)
         {
             return Spawn(originalPrefab, position, rotation, null, autoPoolID);
